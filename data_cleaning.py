@@ -25,7 +25,7 @@ df['age'] = df.Founded.apply(lambda x: x if x < 0 else 2023-x)
 df['python'] = df['Job Description'].apply(lambda x: 1 if 'python' in x.lower() else 0 )
 
 df['R'] = df['Job Description'].apply(lambda x: 1 if 'r studio' in x.lower() else 0 )
-print(df.R.value_counts())
+# print(df.R.value_counts())
 df['spark'] = df['Job Description'].apply(lambda x: 1 if 'spark' in x.lower() else 0 )
 
 df['aws'] = df['Job Description'].apply(lambda x: 1 if 'aws' in x.lower() else 0 )
